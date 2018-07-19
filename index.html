@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title> Basic Image Gallery</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="dist/css/main.css">
+		
+	</head>
+	<body>	
+		<div class="content">
+			<h1>Grumpy Cat Image Gallery</h1>
+			<div id="app">
+				<h2 v-for="img in imgGallery"> {{img.title}}
+					<img v-bind:src="img.src" v-bind:alt="img.title">
+				</h2>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="dist/js/main.js"></script>
+	</body>
+</html>
